@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Data, models and experiment output stay out of git
+data/
+recordings/
+*.mp4
+*.pt
+*.pth
+*.onnx
+runs/
+wandb/
+mlruns/
+
+# Local
+.env
+.DS_Store
+.idea/
+.vscode/
