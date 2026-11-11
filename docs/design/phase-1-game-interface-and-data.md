@@ -51,10 +51,10 @@ Each frame travels with the facts later code will need, in one small record:
 ```python
 @dataclass(frozen=True)
 class Frame:
-    image: np.ndarray   # height x width x 3, uint8, RGB
-    index: int          # position in the stream, starting at 0
+    image: np.ndarray  # height x width x 3, uint8, RGB
+    index: int  # position in the stream, starting at 0
     timestamp_s: float  # seconds since the start of the recording
-    source: str         # where it came from, e.g. a file name or "live"
+    source: str  # where it came from, e.g. a file name or "live"
 ```
 
 A frame source is anything that yields `Frame` objects one at a time, in order. In
