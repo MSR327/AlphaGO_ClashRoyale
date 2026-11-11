@@ -3,7 +3,7 @@
 A long-term research and learning project: build an agent that plays Clash Royale
 from the screen, the way a person does, and learn the ideas behind it along the way.
 
-**Status:** Phase 0 (Foundations). Nothing plays the game yet.
+**Status:** Phase 1 (Game interface and data). Nothing plays the game yet.
 
 ## How this project works
 
@@ -51,6 +51,9 @@ uv run pytest      # run tests
 uv run ruff check  # lint
 uv run ruff format # format
 ```
+
+Recording from a phone (Phase 1 onward) also needs `adb` and `scrcpy`, which uv does
+not manage. On a Mac: `brew install scrcpy` and `brew install --cask android-platform-tools`.
 
 ## Ground rules
 
